@@ -2,8 +2,12 @@
 :root{
     --header-height: 40px;
     --jumbotron-min-height: 400px;
+    --ms_light_grey:#aea7a7;
 }
-
+/* UTILITY */
+.ms_bg_light_grey{
+    background-color:  var(--ms_light_grey);
+}
 /* /var */
 html{
     font-size: 100%;
@@ -53,4 +57,8 @@ header{
  /* section game-store */
  #it-take-two .similar{
     background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
+ }
+ /* section play-plus */
+ #play-plus .ps-size{
+    width: 250px;
  }
