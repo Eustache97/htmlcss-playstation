@@ -1,6 +1,7 @@
 /* var */
 :root{
     --header-height: 40px;
+    --jumbotron-min-height: 400px;
 }
 
 /* /var */
@@ -11,6 +12,7 @@ html{
 img{
     max-width: 100%;
 }
+/* header */
 header{
     height:var(--header-height);
     width:100%;
@@ -18,4 +20,24 @@ header{
 .sony{
     width: 100px;
     line-height: var(--header-height);
+}
+/* jumbotron */
+.jumbotron{
+    width: 100%;
+    min-height: var(--jumbotron-min-height);
+    background-image:url("../img/jumbo-bg.png");
+    background-size: cover;
+    background-position: top;
+    color
+}
+.jumbotron .row{
+    height: var(--jumbotron-min-height)
+}
+.card{
+    background-color:unset;
+    /* debug */
+    border: 1px solid black;
+}
+.jumbotron .card img{
+    width: 50%;
 }
