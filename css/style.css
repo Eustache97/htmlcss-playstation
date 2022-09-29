@@ -1,0 +1,21 @@
+/* var */
+:root{
+    --header-height: 40px;
+}
+
+/* /var */
+html{
+    font-size: 100%;
+}
+
+img{
+    max-width: 100%;
+}
+header{
+    height:var(--header-height);
+    width:100%;
+}
+.sony{
+    width: 100px;
+    line-height: var(--header-height);
+}
