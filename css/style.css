@@ -22,7 +22,7 @@ header{
     line-height: var(--header-height);
 }
 /* jumbotron */
-.jumbotron{
+.similar{
     width: 100%;
     min-height: var(--jumbotron-min-height);
     background-image:url("../img/jumbo-bg.png");
@@ -31,7 +31,7 @@ header{
     color
 }
 .jumbotron .row{
-    height: var(--jumbotron-min-height)
+    height: var(--jumbotron-min-height);
 }
 .card{
     background-color:unset;
@@ -49,4 +49,8 @@ header{
  }
  .box{
     border: 1px solid black;
+ }
+ /* section game-store */
+ #it-take-two .similar{
+    background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
  }
