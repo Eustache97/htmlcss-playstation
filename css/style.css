@@ -38,6 +38,15 @@ header{
     /* debug */
     border: 1px solid black;
 }
-.jumbotron .card img{
+.jumbotron .card .image-half{
     width: 50%;
 }
+/* section console */
+ .eccolo-lol{
+    width: 100%;
+    /* debug */
+    border: 1px solid black;
+ }
+ .box{
+    border: 1px solid black;
+ }
