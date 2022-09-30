@@ -7,6 +7,7 @@
     --ms_light_blue:#00439C;
     --ms_dark_grey: #363636; 
     --ms_red_brow: #CD3D0F;
+    --ms_light_light_grey: #D9DADC;
 }
 /* UTILITY */
 .ms_bg_light_grey{
@@ -24,13 +25,16 @@
 .ms_bg_red_brown{
     background-color: var(--ms_red_brow);
 }
+.ms_bg_light_light_grey{
+    background-color: var(--ms_light_light_grey);
+}
 .ms_btn{
     display: inline-block;
     padding: .3rem .5rem;
     border-radius: 50px;
 }
 .ms_btn:hover{
-    opacity: .9;
+    opacity: .8;
 }
 
 /* /var */
