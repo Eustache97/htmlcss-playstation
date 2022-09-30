@@ -23,41 +23,73 @@
     <main>
     <!-- nav -->
         <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container">
-                <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/play_logo.svg" alt="logo-ps">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link"  href="#">Giochi
+                        <img class="ms_chevron-down" src="img/chevron-down-solid.svg" alt="chevron-down">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Hardware
+                        <img class="ms_chevron-down" src="img/chevron-down-solid.svg" alt="chevron-down">
+                    </a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
-                    <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-                </div>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Servizi
+                        <img class="ms_chevron-down" src="img/chevron-down-solid.svg" alt="chevron-down">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Novità
+                        <img class="ms_chevron-down" src="img/chevron-down-solid.svg" alt="chevron-down">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Fai Acquisti
+                        <img class="ms_chevron-down" src="img/chevron-down-solid.svg" alt="chevron-down">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Supporto
+                        <img class="ms_chevron-down" src="img/chevron-down-solid.svg" alt="chevron-down">
+                    </a>
+                </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My PlayStation
+                            <img class="ms_chevron-down" src="img/chevron-down-solid.svg" alt="chevron-down">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ms_btn ms_bg_dark_grey text-white" href="">Accedi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            <img class="ms_lens" src="img/lens.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
             </div>
         </nav>
         <!-- /nav -->
@@ -66,7 +98,7 @@
                 <div class="container">
                     <div class="row align-content-end">
                         <div class="col-12 col-lg-5">
-                            <div class="card">
+                            <div class="card py-3">
                                 <img class="image-half" src="img/returnal-hero-banner-logo.png" alt="returnal-logo">
                                 <div class="card-body p-0">
                                     <h3 class="card-title">Rompi il cerchio</h3>
@@ -122,8 +154,8 @@
                     <h3>Ecco la Play Station 5</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laborum</p>
                 </div>
-                <div class="row g-3 mb-2 row-cols-1 row-cols-md-2">
-                    <div class="col my-auto">
+                <div class="row g-3 row-cols-1 row-cols-md-2 align-items-center mb-2">
+                    <div class="col">
                         <div class="card">
                             <div class="card-body p-0">
                                 <h3 class="card-title">Console PlayStation 5</h3>
@@ -304,9 +336,9 @@
         </section>
         <section id="play-plus" class="ms_bg_light_grey">
             <div class="container">
-                <div class="row  mb-2 row-cols-1 row-cols-md-2">
-                    <div class="col my-auto">
-                        <div class="card">
+                <div class="row row-cols-1 row-cols-md-2 align-items-center mb-2">
+                    <div class="col">
+                        <div class="card py-3">
                             <div class="card-body p-0">
                                  <div class="card-title">
                                     <img class="ps-size" src="img/ps-plus-logo.png" alt="ps-plus-logo">
@@ -344,9 +376,9 @@
         </section>
         <section id="play-now" class="ms_bg_dark_blue text-white">
             <div class="container">
-                <div class="row  mb-2 row-cols-1 row-cols-md-2">
-                    <div class="col my-auto">
-                        <div class="card">
+                <div class="row row-cols-1 row-cols-md-2 align-items-center mb-2">
+                    <div class="col">
+                        <div class="card py-3">
                             <div class="card-body p-0">
                                  <div class="card-title">
                                     <img class="ps-size" src="img/ps-now-logo-two-column.png" alt="ps-now-logo">
@@ -395,7 +427,66 @@
                 </div>
             </div>
         </section>
-        <!-- /MAIN -->
     </main>
+        <!-- /MAIN -->
+        <!-- FOOTER -->
+    <footer class="ms_bg_light_blue text-white pt-5">
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-12 col-lg-6 mb-4">
+                        <img class="d-block mb-3" src="img/ps-footer.svg" alt="image-footer-ps">
+                        <img class="globe" src="img/language-globe.svg" alt="image-footer-language_globe">
+                        <span>Country/Region:Italy</span>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2">
+                        <ul>
+                            <li><a href="">Link footer n</a></li>
+                            <li><a href="">Link footer n</a></li>
+                            <li><a href="">Link footer n</a></li>
+                            <li><a href="">Link footer n</a></li>
+                            <li><a href="">Link footer n</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2">
+                        <ul>
+                            <li><a href="">Link footer n</a></li>
+                            <li><a href="">Link footer n</a></li>
+                            <li><a href="">Link footer n</a></li>
+                            <li><a href="">Link footer n</a></li>
+                            <li><a href="">Link footer n</a></li>
+                            <li><a href="">Link footer n</a></li>
+                            <li><a href="">Link footer n</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2">
+                        <ul>
+                            <li><a href="">Link footer n</a></li>
+                            <li><a href="">Link footer n</a></li>
+                            <li><a href="">Link footer n</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <img class="sie" src="img/sie-logo.svg" alt="sie-image">
+                            <p>
+                                Website &copy;2021 Sony Interactive Entertainement Europe Limited.
+                                Tutti i contenuti, nomi dei giochi, nomi commerciali e o di abbigliamento
+                                marchi registrati, grafica e immagini associati sono marchi rwegistrati 
+                                e/o materiale protetto da copyright dei rispettivi proprietari.
+                                Tutti i diritti riservati. <a class="text-decoration-underline" href="">Maggiori info</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /FOOTER -->
+
+    </footer>
 </body>
 </html>

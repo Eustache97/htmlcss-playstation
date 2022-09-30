@@ -4,6 +4,8 @@
     --jumbotron-min-height: 400px;
     --ms_light_grey:#aea7a7;
     --ms_dark_blue: #161C3B;
+    --ms_light_blue:#00439C;
+    --ms_dark_grey: #363636;
 }
 /* UTILITY */
 .ms_bg_light_grey{
@@ -12,18 +14,41 @@
 .ms_bg_dark_blue{
     background-color:  var(--ms_dark_blue);
 }
+.ms_bg_light_blue{
+    background-color:  var(--ms_light_blue);
+}
+.ms_bg_dark_grey{
+    background-color: var(--ms_dark_grey);
+}
+.ms_btn{
+    display: inline-block;
+    padding: .3rem .5rem;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+.ms_btn:hover{
+    opacity: .9;
+}
+
 /* /var */
 /* COMMONS */
 html{
     font-size: 100%;
 }
-
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
 img{
     max-width: 100%;
 }
 .ms_container{
-    width: 50%;
+    width:100%;
     margin: 0 auto;
+    max-width: 600px;
 }
 /* /COMMONS */
 /* header */
@@ -34,6 +59,16 @@ header{
 .sony{
     width: 100px;
     line-height: var(--header-height);
+}
+/* nav */
+.ms_chevron-down{
+    width: 10px;
+}
+main nav a.nav-link{
+    color:black;
+}
+nav .ms_lens{
+    width: 20px;
 }
 /* jumbotron */
  .similar{
@@ -71,4 +106,14 @@ header{
  /* section play-plus */
  .ps-size{
     width: 250px;
+ }
+ /* footer */
+ .footer-top img.globe{
+    width: 20px;
+ }
+ .footer-bottom img.sie{
+    width: 100px;
+ }
+footer a:hover{
+    color: black;
  }
