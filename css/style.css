@@ -5,7 +5,8 @@
     --ms_light_grey:#aea7a7;
     --ms_dark_blue: #161C3B;
     --ms_light_blue:#00439C;
-    --ms_dark_grey: #363636;
+    --ms_dark_grey: #363636; 
+    --ms_red_brow: #CD3D0F;
 }
 /* UTILITY */
 .ms_bg_light_grey{
@@ -20,11 +21,13 @@
 .ms_bg_dark_grey{
     background-color: var(--ms_dark_grey);
 }
+.ms_bg_red_brown{
+    background-color: var(--ms_red_brow);
+}
 .ms_btn{
     display: inline-block;
     padding: .3rem .5rem;
     border-radius: 50px;
-    border: 1px solid black;
 }
 .ms_btn:hover{
     opacity: .9;
@@ -41,6 +44,9 @@ ul{
 a{
     text-decoration: none;
     color: inherit;
+}
+a.ms_btn:hover{
+    color: unset;
 }
 img{
     max-width: 100%;
@@ -65,7 +71,7 @@ header{
     width: 10px;
 }
 main nav a.nav-link{
-    color:black;
+    color: var(--bs-dark);
 }
 nav .ms_lens{
     width: 20px;
@@ -77,15 +83,23 @@ nav .ms_lens{
     background-image:url("../img/jumbo-bg.png");
     background-size: cover;
     background-position: top;
-    color
 }
 .jumbotron .row{
     height: var(--jumbotron-min-height);
 }
+#jumbotron-games .games .card{
+   transition: transform 1s;
+}
+#jumbotron-games .games .card:hover{
+    transform: translateY(-10%);
+}
 .card{
     background-color:unset;
-    /* debug */
-    border: 1px solid black;
+    border: unset;
+}
+.card>img{
+    display: block;
+    border-radius: 20px;
 }
 .image-half{
     width: 50%;
@@ -93,11 +107,22 @@ nav .ms_lens{
 /* section console */
  .eccolo-lol{
     width: 100%;
-    /* debug */
-    border: 1px solid black;
  }
  .box{
-    border: 1px solid black;
+    width: 100%;
+ }
+ /* section console */
+ #console .box.element{
+    opacity: .8;
+ }
+ #console .box.element:hover{
+    opacity: 1;
+ }
+ .active{
+    border-bottom: 2px solid var(--bs-primary) ;
+ }
+ #console a:hover{
+    color: inherit
  }
  /* section game-store */
  #it-take-two .adventure.similar{
@@ -115,5 +140,5 @@ nav .ms_lens{
     width: 100px;
  }
 footer a:hover{
-    color: black;
+    color: var(--bs-dark);
  }
