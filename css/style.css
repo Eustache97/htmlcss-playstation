@@ -13,6 +13,7 @@
     background-color:  var(--ms_dark_blue);
 }
 /* /var */
+/* COMMONS */
 html{
     font-size: 100%;
 }
@@ -20,6 +21,11 @@ html{
 img{
     max-width: 100%;
 }
+.ms_container{
+    width: 50%;
+    margin: 0 auto;
+}
+/* /COMMONS */
 /* header */
 header{
     height:var(--header-height);
@@ -30,7 +36,7 @@ header{
     line-height: var(--header-height);
 }
 /* jumbotron */
-.similar{
+ .similar{
     width: 100%;
     min-height: var(--jumbotron-min-height);
     background-image:url("../img/jumbo-bg.png");
@@ -46,7 +52,7 @@ header{
     /* debug */
     border: 1px solid black;
 }
-.jumbotron .card .image-half{
+.image-half{
     width: 50%;
 }
 /* section console */
@@ -59,7 +65,7 @@ header{
     border: 1px solid black;
  }
  /* section game-store */
- #it-take-two .similar{
+ #it-take-two .adventure.similar{
     background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
  }
  /* section play-plus */
