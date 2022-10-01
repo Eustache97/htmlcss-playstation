@@ -35,7 +35,7 @@
 }
 .ms_btn:hover{
     opacity: .9;
-    box-shadow:  3px 3px 4px grey;
+    box-shadow:  3px 3px 4px var(--bs-dark);
 }
 
 /* /var */
@@ -128,7 +128,7 @@ main nav.navbar{
 }
 .nested-menu li:hover{
     border: 1px solid var(--ms_light_grey);
-    box-shadow: 5px 5px 4px var(--bs-dark);
+    box-shadow: 5px 5px 4px var(--ms_light_grey);
 }
 
 /* jumbotron */
