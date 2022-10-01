@@ -34,7 +34,8 @@
     border-radius: 50px;
 }
 .ms_btn:hover{
-    opacity: .8;
+    opacity: .9;
+    box-shadow:  3px 3px 4px grey;
 }
 
 /* /var */
@@ -60,11 +61,18 @@ img{
     margin: 0 auto;
     max-width: 600px;
 }
+main{
+    padding-top: 7rem;
+}
 /* /COMMONS */
 /* header */
 header{
     height:var(--header-height);
     width:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
 }
 .sony{
     width: 100px;
@@ -80,6 +88,49 @@ main nav a.nav-link{
 nav .ms_lens{
     width: 20px;
 }
+main nav.navbar{
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+/* Nested menu */
+
+/* nav.navbar-nav{
+    position: relative;
+} */
+ ul.navbar-nav {
+    position: relative;
+    /* per farsi che la tendina del sottomenu prenda tutto lo schermo
+    in larghezza ho pensato di mettere il position relative al nav
+    ma ho notato che l'hover avviene ma non mi da il tempo di andare
+    sulla tendina..scompare dunque subito. */
+}
+
+ .navbar-nav .nested-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--bs-white);
+    line-height: normal;
+    width:100vw;
+    display: none;
+    transition: display 2s;
+}
+.navbar-nav li:hover .nested-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.navbar-nav li:hover .ms_chevron-down{
+    transform: rotate(-180deg);
+}
+.nested-menu li:hover{
+    border: 1px solid var(--ms_light_grey);
+    box-shadow: 5px 5px 4px var(--bs-dark);
+}
+
 /* jumbotron */
  .similar{
     width: 100%;
