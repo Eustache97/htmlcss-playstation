@@ -67,12 +67,13 @@ main{
 /* /COMMONS */
 /* header */
 header{
-    height:var(--header-height);
+    min-height:var(--header-height);
     width:100%;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9999;
+    width: 100%;
+    z-index: 999;
 }
 .sony{
     width: 100px;
@@ -82,18 +83,11 @@ header{
 .ms_chevron-down{
     width: 10px;
 }
-main nav a.nav-link{
+nav a.nav-link{
     color: var(--bs-dark);
 }
 nav .ms_lens{
     width: 20px;
-}
-main nav.navbar{
-    position: fixed;
-    top: var(--header-height);
-    left: 0;
-    width: 100%;
-    z-index: 999;
 }
 /* Nested menu */
 
@@ -132,14 +126,16 @@ main nav.navbar{
 }
 
 /* jumbotron */
- .similar{
-    width: 100%;
-    min-height: var(--jumbotron-min-height);
+#jumbotron{
     background-image:url("../img/jumbo-bg.png");
     background-size: cover;
     background-position: top;
 }
-.jumbotron .row{
+ .similar{
+    width: 100%;
+    min-height: var(--jumbotron-min-height);
+}
+.similar .row{
     height: var(--jumbotron-min-height);
 }
 #jumbotron-games .games .card{
@@ -180,8 +176,10 @@ main nav.navbar{
     color: inherit
  }
  /* section game-store */
- #it-take-two .adventure.similar{
+ #it-take-two{
     background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
+    background-size: cover;
+    background-position: top;
  }
  /* section play-plus */
  .ps-size{
